@@ -15,14 +15,14 @@
          iFrameResize({
             heightCalculationMethod: 'documentElementScroll',
             scrolling : true,
+            checkOrigin : false,
             enablePublicMethods : true,
             minHeight: 1500,
            });
           window.addEventListener('scroll', function(e) {
-            console.log('scrolling', e, document.querySelector('#hashtag-gallery').height());
+            console.log('scrolling', e);
+            console.log(document.documentElement.scrollHeight, document.querySelector('#rimmel').scrollHeight);
           });
-            
-           //test
         </script>
     </body>
 </html>
