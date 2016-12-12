@@ -13,15 +13,14 @@
 
         <script>
          iFrameResize({
-                heightCalculationMethod: 'documentElementScroll',
-                scrolling : true,
-                enablePublicMethods : true,
-                minHeight: 1500,
-            });
-            
-            window.addEventListener('scroll', function(e) {
-                console.log('scrolling', e, $('#hashtag-gallery').height());
-            })
+            heightCalculationMethod: 'documentElementScroll',
+            scrolling : true,
+            enablePublicMethods : true,
+            minHeight: 1500,
+           });
+          window.addEventListener('scroll', function(e) {
+            console.log('scrolling', e, $('#hashtag-gallery').height());
+          });
         </script>
     </body>
 </html>
