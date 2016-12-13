@@ -3,13 +3,21 @@
 <html>
     <head>
      <!-- <script src="https://s3.amazonaws.com/assets.offerpop.com/libs/iframeresizer/iframeResizer.min.js"></script> -->
+        <style> 
+            .iframe-container {
+                overflow:scroll !important; 
+                -webkit-overflow-scrolling:touch !important;
+            }
+        </style>
     </head>
 
 
     </head>
 
     <body>
-        <iframe src="//wyng.com/commerce/gallery/24659?context=iframe" width="100%" frameborder="0" id="rimmel" scrolling=yes  height="800"></iframe>
+        <div class="iframe-container">
+            <iframe src="//wyng.com/commerce/gallery/24659?context=iframe" width="100%" frameborder="0" id="rimmel" scrolling=yes  height="800"></iframe>
+        </div>
 
         <!-- <script>
          iFrameResize({
